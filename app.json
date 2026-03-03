@@ -17,15 +17,18 @@
     ],
     "ios": {
       "supportsTablet": true,
-      "bundleIdentifier": "com.yourcompany.quranvocab"
+      "bundleIdentifier": "com.mapps.quranvocab",
+      "infoPlist": {
+        "NSSpeechRecognitionUsageDescription": "This app uses speech recognition to help you pronounce Arabic words.",
+        "NSMicrophoneUsageDescription": "This app uses microphone for speech recognition."
+      }
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#2E7D32"
       },
-      "package": "com.yourcompany.quranvocab",
-      "versionCode": 1,
+      "package": "com.mapps.quranvocab",
       "permissions": [
         "android.permission.RECORD_AUDIO"
       ]
@@ -33,31 +36,12 @@
     "web": {
       "favicon": "./assets/favicon.png"
     },
-    "plugins": [
-      [
-        "expo-speech",
-        {
-          "microphonePermission": "Allow $(PRODUCT_NAME) to access your microphone for speech recognition."
-        }
-      ]
-    ],
+    "plugins": [],
     "extra": {
       "eas": {
-        "projectId": "your-project-id"
+        "projectId": "b0e1e501-5d69-4ca4-b3f0-a6a02196eb7a"
       }
     },
-    "androidStatusBar": {
-      "backgroundColor": "#2E7D32",
-      "barStyle": "light-content"
-    },
-    "androidNavigationBar": {
-      "backgroundColor": "#2E7D32",
-      "barStyle": "light-content"
-    },
-    "description": "Learn Quranic vocabulary with pronunciation, quizzes, and progress tracking",
-    "githubUrl": "https://github.com/nickty/quran-vocab-app"
-  },
-   "cli": {
-      "appVersionSource": "local" // or "remote" if you use EAS Update for versions
-    }
+    "owner": "qnickty"
+  }
 }
