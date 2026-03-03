@@ -1,0 +1,17 @@
+{
+  "build": {
+    "production": {
+      "android": {
+        "buildType": "app-bundle"
+      },
+      "env": {
+        "EAS_BUILD_NO_EXPO_GO_WARNING": "true"
+      }
+    },
+    // Consider adding a "development" profile for testing with development builds
+    "development": {
+      "developmentClient": true,
+      "distribution": "internal"
+    }
+  }
+}
