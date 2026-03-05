@@ -52,7 +52,7 @@ const HomeScreen = ({ navigation }) => {
           <Text style={styles.userName}>{auth.currentUser?.displayName || 'Learner'}</Text>
         </View>
         <Image
-          source={require('../../assets/icon.png')}
+          source={require('../../assets/icon.jpg')}
           style={styles.profileIcon}
         />
       </View>

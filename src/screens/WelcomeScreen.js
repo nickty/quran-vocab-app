@@ -42,7 +42,7 @@ const WelcomeScreen = ({ navigation }) => {
     <View style={styles.container}>
       <View style={styles.logoContainer}>
         <Image
-          source={require('../../assets/icon.png')}
+          source={require('../../assets/icon.jpg')}
           style={styles.logo}
         />
         <Text style={styles.title}>Quran Vocabulary</Text>
